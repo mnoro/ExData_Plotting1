@@ -3,6 +3,7 @@
 source("gettingData.R")
 
 # 04. Plot4
+png("Plot4.png",width=480,height=480)
 par(mfrow = c(2,2))
 with(result, {
   plot(date_time, Global_active_power, type = "l", ylab = "Global Active power", xlab ="")
@@ -22,6 +23,5 @@ with(result, {
   
 })
 
-dev.copy(png, file = file.path(getwd(),"figure/Plot4.png"))
 dev.off()
 par(mfrow = c(1,1))
