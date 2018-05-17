@@ -18,4 +18,4 @@ result <- hpc%>%
   mutate(date_time = as.POSIXct(date_time,format = "%d/%m/%Y %H:%M:%S")) %>%
   filter(date_time >= "2007-02-01" & date_time <= "2007-02-03 00:00:00")
 
-
+# data ready to be used - result
